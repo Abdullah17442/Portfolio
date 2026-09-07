@@ -1,6 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import resume from "./assets/Resume-Abdullah-Ahmed.pdf";
+import resume from "./assets/Resume - Abdullah-Ahmed.pdf";
 
 function AnimatedNumber({
   target,
@@ -180,7 +180,7 @@ function App() {
 
             <a
               href={resume}
-              download="Resume - Abdullah-Ahmed.pdf"
+              download="Abdullah-Ahmed-Resume.pdf"
             >
               CV ↓
             </a>
@@ -739,7 +739,7 @@ function App() {
 
             <a
               href={resume}
-              download="Resume - Abdullah-Ahmed.pdf"
+              download="Abdullah-Ahmed-Resume.pdf"
             >
               CV
             </a>
