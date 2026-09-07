@@ -730,7 +730,7 @@ function App() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/abdullah-ahmed17442/"
+              href="https://www.linkedin.com/in/abdullah-ahmed17442"
               target="_blank"
               rel="noreferrer"
             >
