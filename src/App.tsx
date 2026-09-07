@@ -180,7 +180,7 @@ function App() {
 
             <a
               href={resume}
-              download="Abdullah-Ahmed Resume.pdf"
+              download="Resume - Abdullah-Ahmed.pdf"
             >
               CV ↓
             </a>
@@ -739,7 +739,7 @@ function App() {
 
             <a
               href={resume}
-              download="Abdullah-Ahmed-Resume.pdf"
+              download="Resume - Abdullah-Ahmed.pdf"
             >
               CV
             </a>
