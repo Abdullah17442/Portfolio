@@ -225,7 +225,7 @@ function App() {
 
               <a
                 className="btn"
-                href="https://www.linkedin.com/in/abdullahahmed17442/"
+                href="https://www.linkedin.com/in/abdullah-ahmed17442 "
                 target="_blank"
                 rel="noreferrer"
               >
