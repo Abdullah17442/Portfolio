@@ -180,7 +180,7 @@ function App() {
 
             <a
               href={resume}
-              download="Abdullah-Ahmed-Resume.pdf"
+              download="Abdullah-Ahmed Resume.pdf"
             >
               CV ↓
             </a>
@@ -730,7 +730,7 @@ function App() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/abdullahahmed17442/"
+              href="https://www.linkedin.com/in/abdullah-ahmed17442/"
               target="_blank"
               rel="noreferrer"
             >
@@ -739,7 +739,7 @@ function App() {
 
             <a
               href={resume}
-              download="Abdullah-Ahmed-Resume.pdf"
+              download="Abdullah-Ahmed Resume.pdf"
             >
               CV
             </a>
