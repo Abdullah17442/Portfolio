@@ -122,7 +122,7 @@ function VoiceAgent({
       setStatus("Connecting...");
 
       const socket = new WebSocket(
-        "wss://backend-q2egk96v2-abdullah-8c01.vercel.app/ws/voice"
+        "wss://portfolio-2-aem6.onrender.com/ws/voice"
       );
 
       socketRef.current = socket;
