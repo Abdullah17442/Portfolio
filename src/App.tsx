@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import resume from "./assets/Resume - Abdullah-Ahmed.pdf";
+import VoiceAgent from "./components/voice/VoiceAgent";
 
 function AnimatedNumber({
   target,
@@ -163,6 +164,8 @@ const projects = [
 ];
 
 function App() {
+  const [isVoiceOpen, setIsVoiceOpen] = useState(false);
+
   return (
     <>
       {/* NAVIGATION */}
@@ -214,6 +217,15 @@ function App() {
                 View Projects
               </a>
 
+              {/* VOICE AGENT BUTTON */}
+
+              <button
+                className="btn voice-btn"
+                onClick={() => setIsVoiceOpen(true)}
+              >
+                🎙 Talk to Me
+              </button>
+
               <a
                 className="btn"
                 href="https://github.com/Abdullah17442"
@@ -225,7 +237,7 @@ function App() {
 
               <a
                 className="btn"
-                href="https://www.linkedin.com/in/abdullah-ahmed17442 "
+                href="https://www.linkedin.com/in/abdullah-ahmed17442"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -321,7 +333,6 @@ function App() {
       <section className="stats-section">
         <div className="container">
           <div className="portfolio-stats">
-
             <div className="portfolio-stat">
               <AnimatedNumber target={450} suffix="K+" />
               <span>Legal Judgments Processed</span>
@@ -341,7 +352,6 @@ function App() {
               <AnimatedNumber target={2} />
               <span>Professional Experiences</span>
             </div>
-
           </div>
         </div>
       </section>
@@ -465,7 +475,6 @@ function App() {
           </div>
 
           <div className="stack-grid">
-
             <div className="stack-card">
               <h3>Languages</h3>
               <p>
@@ -604,7 +613,6 @@ function App() {
                 AI Infrastructure
               </p>
             </div>
-
           </div>
         </div>
       </section>
@@ -622,7 +630,6 @@ function App() {
           </div>
 
           <div className="timeline">
-
             <div className="timeline-item">
               <h3>Data & AI Engineer</h3>
 
@@ -681,12 +688,11 @@ function App() {
               </div>
 
               <p>
-                Major: Data Science. Academic focus spanning
-                software development, data science, machine
-                learning and AI systems.
+                Major: Data Science. Graduated in July 2026, with an
+                academic focus spanning software development, data
+                science, machine learning and AI systems.
               </p>
             </div>
-
           </div>
         </div>
       </section>
@@ -716,7 +722,6 @@ function App() {
           </div>
 
           <div className="socials">
-
             <a href="tel:+923070661155">
               +923070661155
             </a>
@@ -747,7 +752,6 @@ function App() {
             <a href="mailto:abdullahahmed17882@gmail.com">
               Email
             </a>
-
           </div>
         </div>
       </section>
@@ -757,6 +761,13 @@ function App() {
       <footer>
         © 2026 Abdullah Ahmed. Built with React & TypeScript.
       </footer>
+
+      {/* VOICE AGENT MODAL */}
+
+      <VoiceAgent
+        isOpen={isVoiceOpen}
+        onClose={() => setIsVoiceOpen(false)}
+      />
     </>
   );
 }

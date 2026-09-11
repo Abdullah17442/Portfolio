@@ -752,3 +752,47 @@ footer {
     grid-auto-columns: 92%;
   }
 }
+
+.voice-transcript {
+  width: 100%;
+  max-width: 360px;
+  height: 90px;
+  margin: 22px auto 0;
+  padding: 12px 14px;
+
+  box-sizing: border-box;
+
+  overflow-y: auto;
+
+  text-align: left;
+
+  background: #181818;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+
+  color: #aaa;
+  font-size: 13px;
+  line-height: 1.6;
+
+  white-space: normal;
+  overflow-wrap: break-word;
+
+  scroll-behavior: smooth;
+}
+
+.voice-transcript::-webkit-scrollbar {
+  width: 5px;
+}
+
+.voice-transcript::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.voice-transcript::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+.voice-transcript::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}

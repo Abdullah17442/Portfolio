@@ -1,0 +1,202 @@
+.voice-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+
+  animation: voiceFadeIn 0.2s ease;
+}
+
+.voice-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 430px;
+
+  padding: 32px;
+
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 20px;
+
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+
+  color: #fff;
+}
+
+.voice-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #1d1d1d;
+  color: #aaa;
+
+  font-size: 24px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.voice-close:hover {
+  background: #292929;
+  color: #fff;
+}
+
+.voice-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  font-size: 13px;
+  color: #aaa;
+}
+
+.voice-status-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background: #fff;
+
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.voice-content {
+  text-align: center;
+  padding: 45px 10px 35px;
+}
+
+.voice-orb {
+  width: 120px;
+  height: 120px;
+
+  margin: 0 auto 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #1b1b1b;
+  border: 1px solid #333;
+
+  box-shadow:
+    0 0 0 12px rgba(255, 255, 255, 0.02),
+    0 0 40px rgba(255, 255, 255, 0.08);
+}
+
+.voice-orb-inner {
+  width: 76px;
+  height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #242424;
+
+  font-size: 28px;
+}
+
+.voice-content h2 {
+  margin: 0 0 10px;
+
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.voice-status {
+  margin: 0 0 12px;
+
+  font-size: 14px;
+  color: #fff;
+}
+
+.voice-description {
+  max-width: 320px;
+
+  margin: 0 auto;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: #777;
+}
+
+.voice-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.voice-call-button {
+  width: 100%;
+
+  padding: 14px 20px;
+
+  border: 1px solid #333;
+  border-radius: 10px;
+
+  background: #fff;
+  color: #000;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.voice-call-button:hover {
+  background: #ddd;
+}
+
+@keyframes voiceFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .voice-modal {
+    padding: 24px;
+  }
+
+  .voice-content {
+    padding-top: 35px;
+  }
+
+  .voice-orb {
+    width: 100px;
+    height: 100px;
+  }
+
+  .voice-orb-inner {
+    width: 64px;
+    height: 64px;
+  }
+}
