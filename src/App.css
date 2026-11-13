@@ -503,6 +503,33 @@ section {
 
 
 /* =========================================================
+   CERTIFICATIONS
+========================================================= */
+
+.certifications-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cert-card {
+  min-height: 220px;
+}
+
+.cert-card h3 {
+  margin-bottom: 10px;
+}
+
+.cert-card p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.cert-card p + p {
+  margin-top: 10px;
+}
+
+
+/* =========================================================
    EXPERIENCE
 ========================================================= */
 

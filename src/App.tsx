@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import resume from "./assets/Resume - Abdullah-Ahmed.pdf";
+//import resume from "./assets/Resume - Abdullah-Ahmed.pdf , ./assets/Resume@Abdullah-Ahmed.pdf";
+import resume from "./assets/Resume@Abdullah-Ahmed.pdf";
 import VoiceAgent from "./components/voice/VoiceAgent";
 
 function AnimatedNumber({
@@ -77,15 +78,14 @@ const projects = [
     category: "AI / RAG / AGENTIC AI",
     title: "AI Legal Research Assistant",
     description:
-      "An agentic AI legal research system for Pakistani statutes. The system combines LLM tool calling with hybrid retrieval to search legal information and generate grounded responses.",
+      "An agentic legal assistant built with FastAPI, LangChain, and Google Gemini for autonomous legal search and grounded responses over Pakistani legal data.",
     technologies: [
       "Python",
       "FastAPI",
       "LangChain",
-      "Gemini",
+      "Google Gemini",
       "RAG",
-      "FAISS",
-      "BM25",
+      "Tool Calling",
     ],
     github:
       "https://github.com/Abdullah17442/Law-Assistant",
@@ -93,17 +93,17 @@ const projects = [
 
   {
     number: "02",
-    category: "DATA ENGINEERING / ETL",
-    title: "Scalable Legal Data Engineering System",
+    category: "DATA / NLP / INFORMATION RETRIEVAL",
+    title: "Legal Judgment Processing Pipeline",
     description:
-      "A scalable data engineering pipeline for extracting, cleaning, validating, transforming and structuring large-scale legal datasets for AI-powered applications.",
+      "A Python and FastAPI pipeline that extracts, cleans, and structures Pakistani court judgments with legal metadata and searchable semantic representations.",
     technologies: [
       "Python",
-      "ETL",
-      "Selenium",
-      "Playwright",
-      "BeautifulSoup",
+      "FastAPI",
       "PostgreSQL",
+      "pgvector",
+      "Gemini Embeddings",
+      "Semantic Chunking",
     ],
     github:
       "https://github.com/Abdullah17442/legal-document-processing-pipeline",
@@ -111,17 +111,17 @@ const projects = [
 
   {
     number: "03",
-    category: "DATA / NLP / INFORMATION RETRIEVAL",
-    title: "Legal Judgment Processing Pipeline",
+    category: "DATA ENGINEERING / ETL / SEARCH",
+    title: "Scalable Legal Data Engineering System",
     description:
-      "A Python and FastAPI pipeline for extracting, cleaning and structuring Pakistani court judgments with legal metadata and semantic representations for searchable legal data.",
+      "A scalable web scraping and ETL system for legal document processing, vector indexing, and hybrid search across large legal datasets.",
     technologies: [
       "Python",
-      "FastAPI",
+      "ETL",
+      "Web Scraping",
+      "BM25",
+      "FAISS",
       "PostgreSQL",
-      "pgvector",
-      "Embeddings",
-      "Semantic Chunking",
     ],
     github:
       "https://github.com/Abdullah17442/legal-document-processing-pipeline",
@@ -132,7 +132,7 @@ const projects = [
     category: "MOBILE / FINTECH / FINAL YEAR PROJECT",
     title: "YouPay — Biometric-Based Payment System",
     description:
-      "A React Native mobile payment application enabling cardless fingerprint-based transactions with biometric verification, secure transaction flows and wallet management.",
+      "A React Native (Expo) payment app for cardless fingerprint-based transactions with biometric verification, secure wallet flows, and Firebase-backed user data.",
     technologies: [
       "React Native",
       "Expo",
@@ -142,24 +142,6 @@ const projects = [
     ],
     github:
       "https://github.com/Abdullah17442/YOUPAY",
-  },
-
-  {
-    number: "05",
-    category: "AI / CHATBOT / AUTOMATION",
-    title: "WhatsApp AI Chatbot",
-    description:
-      "An AI-powered WhatsApp chatbot designed to automate conversations and provide intelligent responses through an integrated conversational AI workflow.",
-    technologies: [
-      "Python",
-      "AI",
-      "Chatbot",
-      "WhatsApp",
-      "APIs",
-      "Automation",
-    ],
-    github:
-      "https://github.com/Abdullah17442/Whatsapp-Chatbot",
   },
 ];
 
@@ -179,8 +161,8 @@ function App() {
             <a href="#projects">Projects</a>
             <a href="#stack">Stack</a>
             <a href="#experience">Experience</a>
+            <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
-
             <a
               href={resume}
               download="Resume - Abdullah-Ahmed.pdf"
@@ -197,19 +179,20 @@ function App() {
         <div className="container hero-grid">
           <div>
             <div className="eyebrow">
-              AI • DATA • BACKEND
+              SOFTWARE ENGINEER • AI • DATA • DEVOPS
             </div>
 
             <h1>
-              AI & Data
+              Software
               <span>Engineer.</span>
             </h1>
 
             <p className="hero-description">
-              I build AI-powered applications, scalable data
-              pipelines, RAG systems, and backend services that
-              turn complex data into reliable, production-ready
-              solutions.
+              Python backend engineer with 2 years of experience
+              building FastAPI and REST services backed by PostgreSQL,
+              MySQL, and Supabase. I deliver RAG-based legal search
+              systems, scalable data pipelines, and production-ready
+              AI applications with Docker, GitHub Actions, and AWS.
             </p>
 
             <div className="buttons">
@@ -258,30 +241,30 @@ function App() {
 
           <div className="focus-list">
             <div className="focus-item">
-              <strong>AI Engineering</strong>
+              <strong>AI & Data Engineering</strong>
               <span>
-                LLMs • RAG • Agentic AI • Tool Calling • Embeddings
+                LLMs • RAG • Agentic AI • Embeddings • Vector Search
               </span>
             </div>
 
             <div className="focus-item">
-              <strong>Data Engineering</strong>
+              <strong>Backend & APIs</strong>
               <span>
-                ETL • Data Processing • Web Scraping • Data Validation
+                Python • FastAPI • REST APIs • PostgreSQL • Supabase
               </span>
             </div>
 
             <div className="focus-item">
-              <strong>Backend Engineering</strong>
+              <strong>DevOps & Deployment</strong>
               <span>
-                Python • FastAPI • REST APIs • PostgreSQL • Vector Search
+                Docker • GitHub Actions • AWS • CI/CD • Production Support
               </span>
             </div>
 
             <div className="focus-item">
-              <strong>Application Development</strong>
+              <strong>Frontend & Mobile</strong>
               <span>
-                React • React Native • TypeScript • Firebase
+                React • React Native • Expo • Responsive UI • Firebase
               </span>
             </div>
           </div>
@@ -303,25 +286,26 @@ function App() {
           <div className="about-grid">
             <div className="about-text">
               <p>
-                I'm a Computer Science graduate with a major in
-                Data Science, focused on AI engineering, data
-                engineering, and backend development. I build
-                practical systems involving LLMs, RAG, semantic
-                search, data pipelines, and API-driven applications.
+                I’m a Computer Science graduate with a major in Data
+                Science, specializing in AI, data engineering, and
+                backend development. I build practical systems
+                involving LLMs, RAG, semantic search, ETL pipelines,
+                and API-driven applications for real-world use.
               </p>
 
               <p>
-                My experience includes developing AI-powered legal
-                research systems, processing large-scale legal
-                datasets, building automated ETL pipelines, and
-                developing backend services with Python and FastAPI.
+                My recent work includes building an AI-powered legal
+                research assistant, processing 450,000+ court
+                judgments and 40,000+ legal provisions, and designing
+                hybrid retrieval systems using embeddings, BM25,
+                FAISS, and cross-encoder reranking.
               </p>
 
               <p>
-                I also have experience building cross-platform
-                mobile applications with React Native and
-                integrating APIs, Firebase, and cloud-based
-                services into production-oriented applications.
+                I also bring hands-on experience in React Native,
+                clean backend architecture, cloud deployment, and
+                production support, with a strong focus on scalable,
+                reliable, and maintainable solutions.
               </p>
             </div>
           </div>
@@ -349,7 +333,7 @@ function App() {
             </div>
 
             <div className="portfolio-stat">
-              <AnimatedNumber target={2} />
+              <AnimatedNumber target={3} />
               <span>Professional Experiences</span>
             </div>
           </div>
@@ -631,6 +615,26 @@ function App() {
 
           <div className="timeline">
             <div className="timeline-item">
+              <h3>DevOps Engineer Intern</h3>
+
+              <div className="date">
+                Mobilink Microfinance Bank • October 2026 — Present
+              </div>
+
+              <p>
+                Monitor production systems, troubleshoot incidents,
+                and analyze application logs to identify and resolve
+                operational issues quickly.
+              </p>
+
+              <p>
+                Support CI/CD pipelines that automate build and
+                deployment workflows, improving release reliability and
+                deployment speed.
+              </p>
+            </div>
+
+            <div className="timeline-item">
               <h3>Data & AI Engineer</h3>
 
               <div className="date">
@@ -638,27 +642,21 @@ function App() {
               </div>
 
               <p>
-                Engineered AI-powered legal research solutions
-                using LLMs, RAG pipelines, semantic search, and
-                automated retrieval workflows.
+                Engineered AI-powered legal research solutions using
+                LLMs, RAG pipelines, and semantic search.
               </p>
 
               <p>
-                Processed and structured 450,000+ court judgments
-                and 40,000+ legal provisions for scalable
-                AI-powered legal search systems.
+                Processed, cleaned, and structured 450,000+ court
+                judgments and 40,000+ legal provisions for scalable
+                search and analytics pipelines.
               </p>
 
               <p>
-                Built automated data cleaning, validation, and
-                auditing pipelines for large-scale JSON and
-                JSONL datasets.
-              </p>
-
-              <p>
-                Implemented hybrid retrieval using BM25,
-                embeddings, FAISS, and cross-encoder reranking
-                for improved legal document retrieval.
+                Built automated validation and auditing workflows for
+                JSON and JSONL datasets, and implemented hybrid search
+                using embeddings, BM25, FAISS, and cross-encoder
+                reranking.
               </p>
             </div>
 
@@ -671,16 +669,20 @@ function App() {
               </div>
 
               <p>
-                Built cross-platform mobile applications using
-                React Native and Expo, integrated REST APIs and
-                Firebase Authentication, and contributed to
-                reusable UI components and application performance.
+                Built cross-platform mobile applications using React
+                Native and Expo with responsive UI, Firebase
+                Authentication, and REST API integration.
+              </p>
+
+              <p>
+                Contributed reusable UI components and improved app
+                performance in a collaborative team environment.
               </p>
             </div>
 
             <div className="timeline-item">
               <h3>
-                Bachelor of Science in Computer Science
+                Bachelor of Science in Computer Science (Data Science)
               </h3>
 
               <div className="date">
@@ -688,9 +690,41 @@ function App() {
               </div>
 
               <p>
-                Major: Data Science. Graduated in July 2026, with an
-                academic focus spanning software development, data
-                science, machine learning and AI systems.
+                Graduated with a focus on software development, data
+                science, machine learning, and AI systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CERTIFICATIONS */}
+
+      <section id="certifications">
+        <div className="container">
+          <div className="section-label">Certifications</div>
+
+          <div className="section-title">
+            Certifications & Training
+          </div>
+
+          <div className="stack-grid certifications-grid">
+            <div className="stack-card cert-card">
+              <h3>AI Monitor Engineer Training Program</h3>
+              <p>ClickChain AI Academy • Ongoing</p>
+              <p>
+                Learning to monitor AI agents, evaluate model
+                outputs, and improve reliability in agentic
+                workflows.
+              </p>
+            </div>
+
+            <div className="stack-card cert-card">
+              <h3>Workshop on Front-End Development</h3>
+              <p>HITEC University</p>
+              <p>
+                Completed a front-end workshop covering modern web
+                technologies and practical UI development.
               </p>
             </div>
           </div>
