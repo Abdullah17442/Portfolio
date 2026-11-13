@@ -284,30 +284,30 @@ function App() {
           </div>
 
           <div className="about-grid">
-            <div className="about-text">
-              <p>
-                I’m a Computer Science graduate with a major in Data
-                Science, specializing in AI, data engineering, and
-                backend development. I build practical systems
-                involving LLMs, RAG, semantic search, ETL pipelines,
-                and API-driven applications for real-world use.
-              </p>
-
-              <p>
-                My recent work includes building an AI-powered legal
-                research assistant, processing 450,000+ court
-                judgments and 40,000+ legal provisions, and designing
-                hybrid retrieval systems using embeddings, BM25,
-                FAISS, and cross-encoder reranking.
-              </p>
-
-              <p>
-                I also bring hands-on experience in React Native,
-                clean backend architecture, cloud deployment, and
-                production support, with a strong focus on scalable,
-                reliable, and maintainable solutions.
-              </p>
-            </div>
+          <div className="about-text">
+            <p>
+              I’m a Computer Science graduate specializing in Data Science,
+              with a focus on software engineering, Python backend development,
+              and AI-powered systems. I build practical applications using
+              Python, FastAPI, REST APIs, and PostgreSQL, alongside experience
+              in LLMs, RAG pipelines, semantic search, and data engineering.
+            </p>
+            <p>
+              My experience includes developing an AI-powered legal research
+              platform that processes 450,000+ court judgments and 40,000+
+              legal provisions. I’ve implemented hybrid retrieval systems
+              combining embeddings, BM25, FAISS, and cross-encoder reranking
+              to deliver relevant and accurate search results.
+            </p>
+            <p>
+              Currently, I’m working as a DevOps Engineer Intern at Mobilink
+              Microfinance Bank, where I support production systems, analyze
+              application logs, troubleshoot incidents, and work with CI/CD
+              pipelines. I also bring hands-on experience in React Native,
+              cloud deployment, and clean backend architecture, with a focus
+              on building scalable, reliable, and maintainable software.
+            </p>
+          </div>
           </div>
         </div>
       </section>
